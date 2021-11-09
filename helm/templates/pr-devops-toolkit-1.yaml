@@ -5,7 +5,7 @@ metadata:
   finalizers:
   - resources-finalizer.argocd.argoproj.io
   name: pr-devops-toolkit-1
-  namespace: argocd
+  namespace: argo-cd
 spec:
   destination:
     namespace: pr-devops-toolkit-1
@@ -16,7 +16,7 @@ spec:
       values: |
         image:
           repository: 382093569472.dkr.ecr.us-east-1.amazonaws.com/devops-toolkit
-          tag: 450206b
+          tag: ff754f4
         ingress:
           host: pr-devops-toolkit-1.18.197.29.220.nip.io
       version: v3
